@@ -130,11 +130,11 @@
 }
 
 #languages .skill-name {
-  width: 120px;         /* ajusta espaço do nome */
+  width: 100px;         /* ajusta espaço do nome */
   font-size: 0.9rem;    /* texto ligeiramente menor */
 }
 
 #languages .skill-value {
-  width: 30px;          /* menos espaço para o valor */
+  width: 10px;          /* menos espaço para o valor */
   font-size: 0.8rem;    /* valor menor */
 }
