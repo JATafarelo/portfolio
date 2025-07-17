@@ -88,3 +88,38 @@
       font-size: 0.9rem;
       color: #8b949e;
     }
+
+/* ===== Skill Bars ===== */
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.skill-name {
+  width: 140px;
+  font-weight: 500;
+}
+
+.skill-bar {
+  flex: 1;
+  height: 0.8rem;
+  background: #21262d;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0 0.8rem;
+}
+
+.skill-level {
+  height: 100%;
+  background: var(--accent);
+  width: 0;              /* será sobrescrito pelo style inline */
+  transition: width 0.8s ease-in-out;
+}
+
+.skill-value {
+  width: 40px;
+  text-align: right;
+  font-size: 0.9rem;
+  color: var(--fg);
+}
