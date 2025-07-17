@@ -135,13 +135,6 @@
 }
 
 #languages .skill-value {
-  width: 10px;          /* menos espaço para o valor */
+  width: 30px;          /* menos espaço para o valor */
   font-size: 0.8rem;    /* valor menor */
-}
-
-#languages .skill-level {
-  height: 90%;
-  background: var(--accent);
-  width: 0;              /* será sobrescrito pelo style inline */
-  transition: width 0.8s ease-in-out;
 }
