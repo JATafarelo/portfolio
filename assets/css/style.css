@@ -135,6 +135,6 @@
 }
 
 #languages .skill-value {
-  width: 40px;          /* menos espaço para o valor */
+  width: 30px;          /* menos espaço para o valor */
   font-size: 0.8rem;    /* valor menor */
 }
