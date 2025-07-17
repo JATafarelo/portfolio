@@ -123,3 +123,18 @@
   font-size: 0.9rem;
   color: var(--fg);
 }
+
+/* ===== Idiomas: barras menores ===== */
+#languages .skill-bar {
+  height: 0.5rem;       /* reduz a altura da barra */
+}
+
+#languages .skill-name {
+  width: 120px;         /* ajusta espaço do nome */
+  font-size: 0.9rem;    /* texto ligeiramente menor */
+}
+
+#languages .skill-value {
+  width: 40px;          /* menos espaço para o valor */
+  font-size: 0.8rem;    /* valor menor */
+}
