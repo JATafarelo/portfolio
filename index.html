@@ -134,26 +134,26 @@
     © 2025 João Antonio Tafarelo Guelfi •
   </footer>
   
-<!-- CDN correto -->
+<!-- Apenas scripts no final do body -->
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@latest/tsparticles.bundle.min.js"></script>
-
 <script>
   tsParticles.load("tsparticles", {
-    fullScreen: { enable: true },
+    fullScreen: { enable: true, zIndex: -1 },
     background: { color: "#0d1117" },
     particles: {
       number: { value: 80 },
       color: { value: "#39ff14" },
       links: { enable: true, color: "#39ff14", distance: 120 },
       move: { enable: true, speed: 1 },
-      size: { value: 2 },
+      size: { value: 2 }
     },
     interactivity: {
       events: { onHover: { enable: true, mode: "repulse" } },
       modes: { repulse: { distance: 100 } }
     }
   });
-  </script>
+</script>
+
 
 </body>
 </html>
