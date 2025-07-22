@@ -10,6 +10,9 @@
 </head>
 <body>
 
+  <!-- canvas de fundo -->
+  <div id="tsparticles" style="position: fixed; z-index: -1; width: 100%; height: 100%;"></div>
+
   <!-- Cabeçalho -->
   <header>
     <h1>João Antonio Tafarelo Guelfi</h1>
@@ -131,15 +134,10 @@
     © 2025 João Antonio Tafarelo Guelfi •
   </footer>
   
-<!-- tsparticles script -->
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.1.1/tsparticles.bundle.min.js"></script>
-
-<!-- canvas de fundo -->
-<div id="tsparticles" style="position: fixed; z-index: -1; width: 100%; height: 100%;"></div>
-
 <script>
   tsParticles.load("tsparticles", {
-    fullScreen: { enable: false },
+    fullScreen: { enable: true },
     background: { color: "#0d1117" },
     particles: {
       number: { value: 80 },
@@ -153,7 +151,6 @@
       modes: { repulse: { distance: 100 } }
     }
   });
-</script>
 
 </body>
 </html>
