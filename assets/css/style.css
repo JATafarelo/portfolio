@@ -1,16 +1,10 @@
-header {
-  background: rgba(22, 27, 34, 0.8); /* antes era #161b22 */
-  /* resto igual */
-}
-
-.card {
-  background: rgba(22, 27, 34, 0.75);
-  /* resto igual */
-}
-
-css
-.container {
-  background: transparent;
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 :root {
