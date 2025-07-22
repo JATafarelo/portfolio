@@ -1,9 +1,16 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background: #0d1117;
+header {
+  background: rgba(22, 27, 34, 0.8); /* antes era #161b22 */
+  /* resto igual */
+}
+
+.card {
+  background: rgba(22, 27, 34, 0.75);
+  /* resto igual */
+}
+
+css
+.container {
+  background: transparent;
 }
 
 :root {
