@@ -25,16 +25,16 @@
   "diplomas.tab_aws": "AWS",
   "diplomas.tab_azure": "Azure",
   "diplomas.list_curso": [
-    "Bacharelado em Ciência da Computação – Universidade X",
-    "Licenciatura em Matemática – Universidade Y"
+    "computerscience.png",
+    "mastery.png"
   ],
   "diplomas.list_aws": [
-    "AWS Certified Solutions Architect – Associate",
-    "AWS Certified Developer – Associate"
+    "aws-architect.png",
+    "aws-developer.png"
   ],
   "diplomas.list_azure": [
-    "Microsoft Certified: Azure Fundamentals",
-    "Microsoft Certified: Azure Data Scientist Associate"
+    "azure-fundamentals.png",
+    "azure-data-scientist.png"
   ],
 
   "skill.python": "Python",
