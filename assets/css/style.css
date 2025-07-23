@@ -1,160 +1,51 @@
 :root {
-      --bg: #0d1117;
-      --fg: #c9d1d9;
-      --accent: #39ff14;
-      --accent-dark: #2ca02c;
-      --card-bg: #161b22;
-      --shadow: rgba(0, 0, 0, 0.7);
-    }
+  /* FUNDOS E TEXTOS */
+  --bg:           #121212;   /* fundo principal: muito escuro */
+  --card-bg:      #1E1E1E;   /* fundo de cards/seções: leve variação */
+  --fg:           #E5E5E5;   /* texto principal: claro, alto contraste */
 
-    * {
-      margin: 0; padding: 0;
-      box-sizing: border-box;
-      font-family: 'Source Code Pro', monospace;
-      color: var(--fg);
-    }
+  /* ACENTS PRINCIPAIS (Okabe-Ito) */
+  --accent:       #56B4E9;   /* azul-céu */
+  --accent-dark:  #0072B2;   /* azul-índigo mais escuro */
 
-    body {
-      background: var(--bg);
-      line-height: 1.6;
-    }
+  /* ACENT SECUNDÁRIO */
+  --accent2:      #E69F00;   /* laranja */
+  --accent2-dark: #D55E00;   /* vermelho-alaranjado */
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    a:hover {
-      color: var(--accent-dark);
-    }
-
-    header {
-      background: var(--card-bg);
-      padding: 1rem 2rem;
-      box-shadow: 0 2px 4px var(--shadow);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      font-weight: 700;
-      font-size: 1.5rem;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.2rem;
-    }
-
-    .hero {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: var(--accent);
-    }
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto;
-      font-weight: 300;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
-
-    .card {
-      background: var(--card-bg);
-      padding: 1.8rem;
-      margin-bottom: 2rem;
-      border-radius: 6px;
-      box-shadow: 0 2px 8px var(--shadow);
-    }
-    .card h3 {
-      margin-bottom: 0.8rem;
-      color: var(--accent);
-    }
-    .card ul {
-      list-style: inside;
-      line-height: 1.4;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #8b949e;
-    }
-
-/* ===== Skill Bars ===== */
-.skill {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
+  /* SOMBRA */
+  --shadow:       rgba(0, 0, 0, 0.8);
 }
 
-.skill-name {
-  width: 140px;
-  font-weight: 500;
-}
-
-.skill-bar {
-  flex: 1;
-  height: 0.8rem;
-  background: #21262d;
-  border-radius: 4px;
-  overflow: hidden;
-  margin: 0 0.8rem;
-}
-
-.skill-level {
-  height: 100%;
-  background: var(--accent);
-  width: 0;              /* será sobrescrito pelo style inline */
-  transition: width 0.8s ease-in-out;
-}
-
-.skill-value {
-  width: 40px;
-  text-align: right;
-  font-size: 0.9rem;
+/* Exemplos de uso */
+body {
+  background: var(--bg);
   color: var(--fg);
 }
 
-/* ===== Idiomas: barras menores ===== */
-#languages .skill-bar {
-  height: 0.5rem;       /* reduz a altura da barra */
+a {
+  color: var(--accent);
+}
+a:hover {
+  color: var(--accent-dark);
 }
 
-#languages .skill-name {
-  width: 100px;         /* ajusta espaço do nome */
-  font-size: 0.9rem;    /* texto ligeiramente menor */
+.card {
+  background: var(--card-bg);
+  box-shadow: 0 2px 8px var(--shadow);
 }
 
-#languages .skill-value {
-  width: 30px;          /* menos espaço para o valor */
-  font-size: 0.8rem;    /* valor menor */
+button.primary {
+  background: var(--accent);
+  color: var(--bg);
+}
+button.primary:hover {
+  background: var(--accent-dark);
 }
 
-#tsparticles {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+button.secondary {
+  background: var(--accent2);
+  color: var(--bg);
 }
-
-/* No seu style.css */
-#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  top: 0;
-  left: 0;
+button.secondary:hover {
+  background: var(--accent2-dark);
 }
