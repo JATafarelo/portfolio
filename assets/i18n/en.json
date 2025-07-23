@@ -20,6 +20,23 @@
   "contact.title": "Contact Me",
   "footer": "© 2025 João Antonio Tafarelo Guelfi",
 
+  "diplomas.title": "Diplomas & Certifications",
+  "diplomas.tab_curso": "Bachelor Degrees",
+  "diplomas.tab_aws": "AWS",
+  "diplomas.tab_azure": "Azure",
+  "diplomas.list_curso": [
+    "B.S. in Computer Science – University X",
+    "B.Ed. in Mathematics – University Y"
+  ],
+  "diplomas.list_aws": [
+    "AWS Certified Solutions Architect – Associate",
+    "AWS Certified Developer – Associate"
+  ],
+  "diplomas.list_azure": [
+    "Microsoft Certified: Azure Fundamentals",
+    "Microsoft Certified: Azure Data Scientist Associate"
+  ],
+
   "skill.python": "Python",
   "skill.pyspark": "PySpark",
   "skill.sql": "SQL",
