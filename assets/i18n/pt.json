@@ -20,6 +20,23 @@
   "contact.title": "Fale Comigo",
   "footer": "© 2025 João Antonio Tafarelo Guelfi",
 
+  "diplomas.title": "Diplomas e Certificados",
+  "diplomas.tab_curso": "Curso Superior",
+  "diplomas.tab_aws": "AWS",
+  "diplomas.tab_azure": "Azure",
+  "diplomas.list_curso": [
+    "Bacharelado em Ciência da Computação – Universidade X",
+    "Licenciatura em Matemática – Universidade Y"
+  ],
+  "diplomas.list_aws": [
+    "AWS Certified Solutions Architect – Associate",
+    "AWS Certified Developer – Associate"
+  ],
+  "diplomas.list_azure": [
+    "Microsoft Certified: Azure Fundamentals",
+    "Microsoft Certified: Azure Data Scientist Associate"
+  ],
+
   "skill.python": "Python",
   "skill.pyspark": "PySpark",
   "skill.sql": "SQL",
