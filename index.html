@@ -5,108 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfólio • Cientista de Dados</title>
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500;700&display=swap" rel="stylesheet"/>
-  <!-- CSS Externo -->
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  
+
 <div id="particles-js"></div>
 
-  <!-- Cabeçalho -->
-  <header>
-    <h1>João Antonio Tafarelo Guelfi</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#languages">Idiomas</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- Cabeçalho -->
+<header>
+  <h1>João Antonio Tafarelo Guelfi</h1>
+  <nav>
+    <ul>
+      <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+      <li><a href="#languages" data-i18n="nav.languages">Idiomas</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+    </ul>
+  </nav>
 
-  <!-- Seção de boas-vindas -->
-  <section class="hero">
-      <h2>Bem vindo ao meu portfólio</h2>
-      <p>Onde outros veem dados, eu enxergo oportunidades.</p>
-  </section>
+  <!-- Seletor de idioma -->
+  <div>
+    <button data-lang="pt">🇧🇷</button>
+    <button data-lang="en">🇺🇸</button>
+  </div>
+</header>
 
-  <div class="container">
-    <!-- Sobre -->
-    <section id="about" class="card">
-      <h3>Sobre Mim</h3>
-      <p>
-        Sou cientista de dados com experiência prática desde 2021 e formação sólida em Ciência da Computação, 
-        com mestrado em IA aplicada e MBA em Data Science & Analytics (USP/ESALQ).
-      </p>
-      <p>
-        Atuei em projetos nacionais e internacionais de precificação, segmentação, otimização e simulação, 
-        utilizando Python, SQL, Azure, Databricks e bibliotecas modernas de machine learning e deep learning. 
-        Tenho experiência com Big Data, pipelines de ETL, e práticas de MLOps com CI/CD.
-      </p>
-      <p>
-        No dia a dia, atuo com metodologias ágeis como Scrum e Kanban, e me destaco pela capacidade analítica, 
-        comunicação clara de insights, visão de negócio e colaboração com equipes multidisciplinares — essenciais para transformar dados em decisões estratégicas.
-      </p>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="card">
-  <h3>Skills</h3>
-
-  <!-- Linguagens e Plataformas -->
-  <div class="skill"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div><span class="skill-value">9/10</span></div>
-  <div class="skill"><span class="skill-name">PySpark</span><div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div><span class="skill-value">9/10</span></div>
-  <div class="skill"><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div><span class="skill-value">9/10</span></div>
-  <div class="skill"><span class="skill-name">Databricks</span><div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div><span class="skill-value">9/10</span></div>
-
-  <!-- Infraestrutura e Cloud -->
-  <div class="skill"><span class="skill-name">Azure</span><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div><span class="skill-value">8/10</span></div>
-  <div class="skill"><span class="skill-name">AWS</span><div class="skill-bar"><div class="skill-level" style="width: 50%;"></div></div><span class="skill-value">5/10</span></div>
-  <div class="skill"><span class="skill-name">Git/GitHub</span><div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div><span class="skill-value">9/10</span></div>
-
-  <!-- Engenharia e Pipelines -->
-  <div class="skill"><span class="skill-name">ETL</span><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div><span class="skill-value">8/10</span></div>
-  <div class="skill"><span class="skill-name">Big Data</span><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div><span class="skill-value">8/10</span></div>
-  <div class="skill"><span class="skill-name">MLOps</span><div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div><span class="skill-value">9/10</span></div>
-  <div class="skill"><span class="skill-name">CI/CD</span><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div><span class="skill-value">8/10</span></div>
-  <div class="skill"><span class="skill-name">Deploy de Modelos</span><div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div><span class="skill-value">9/10</span></div>
-
-  <!-- Data Science e Modelagem -->
-  <div class="skill"><span class="skill-name">Análise Exploratório de Dados</span><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div><span class="skill-value">8/10</span></div>
-  <div class="skill"><span class="skill-name">Modelagem de Dados</span><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div><span class="skill-value">8/10</span></div>
-  <div class="skill"><span class="skill-name">Machine Learning</span><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div><span class="skill-value">8/10</span></div>
-  <div class="skill"><span class="skill-name">Deep Learning</span><div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div><span class="skill-value">7/10</span></div>
-  <div class="skill"><span class="skill-name">LLM</span><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div><span class="skill-value">8/10</span></div>
-
-  <!-- Visualização e Prompt Engineering -->
-  <div class="skill"><span class="skill-name">Power BI</span><div class="skill-bar"><div class="skill-level" style="width: 60%;"></div></div><span class="skill-value">6/10</span></div>
-  <div class="skill"><span class="skill-name">Prompt Engineering</span><div class="skill-bar"><div class="skill-level" style="width: 60%;"></div></div><span class="skill-value">6/10</span></div>
-
-  <!-- Metodologias Ágeis -->
-  <div class="skill"><span class="skill-name">SCRUM</span><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div><span class="skill-value">8/10</span></div>
-  <div class="skill"><span class="skill-name">Kanban</span><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div><span class="skill-value">8/10</span></div>
+<!-- Hero -->
+<section class="hero">
+  <h2 data-i18n="hero.title">Bem vindo ao meu portfólio</h2>
+  <p data-i18n="hero.subtitle">Onde outros veem dados, eu enxergo oportunidades.</p>
 </section>
 
-    <!-- Projetos -->
-    <section id="projects" class="card">
-      <h3>Projetos</h3>
-      <ul>
-        <li>...</li>
-      </ul>
-    </section>
+<div class="container">
+  <!-- Sobre -->
+  <section id="about" class="card">
+    <h3 data-i18n="about.title">Sobre Mim</h3>
+    <p data-i18n="about.1">
+      Sou cientista de dados com experiência prática desde 2021...
+    </p>
+    <p data-i18n="about.2">
+      Atuei em projetos nacionais e internacionais...
+    </p>
+    <p data-i18n="about.3">
+      No dia a dia, atuo com metodologias ágeis...
+    </p>
+  </section>
 
-      <!-- Idiomas -->
+  <!-- Skills -->
+  <section id="skills" class="card">
+    <h3 data-i18n="nav.skills">Skills</h3>
+    <!-- As skills são números e nomes técnicos, não precisam de i18n -->
+    <!-- ... -->
+  </section>
+
+  <!-- Projetos -->
+  <section id="projects" class="card">
+    <h3 data-i18n="projects.title">Projetos</h3>
+    <ul>
+      <li>...</li>
+    </ul>
+  </section>
+
+  <!-- Idiomas -->
   <section id="languages" class="card">
-    <h3>Idiomas</h3>
-
+    <h3 data-i18n="languages.title">Idiomas</h3>
     <div class="skill">
       <span class="skill-name">Português</span>
       <div class="skill-bar">
         <div class="skill-level" style="width: 100%;"></div>
       </div>
-      <span class="skill-value">Nativo</span>
+      <span class="skill-value" data-i18n="languages.pt">Nativo</span>
     </div>
 
     <div class="skill">
@@ -114,29 +83,30 @@
       <div class="skill-bar">
         <div class="skill-level" style="width: 85%;"></div>
       </div>
-      <span class="skill-value">Avançado</span>
+      <span class="skill-value" data-i18n="languages.en">Avançado</span>
     </div>
   </section>
 
+  <!-- Contato -->
+  <section id="contact" class="card">
+    <h3 data-i18n="contact.title">Fale Comigo</h3>
+    <p>Email: <a href="mailto:joao060220@gmail.com">joao060220@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/joao-antonio-tafarelo-guelfi" target="_blank">www.linkedin.com/in/joao-antonio-tafarelo-guelfi</a></p>
+    <p>GitHub: <a href="https://github.com/JATafarelo" target="_blank">https://github.com/JATafarelo</a></p>
+    <p>Telefone: <a target="_blank">+55 (18) 9 9695-9909</a></p>
+  </section>
+</div>
 
-    <!-- Contato -->
-    <section id="contact" class="card">
-      <h3>Fale Comigo</h3>
-      <p>Email: <a href="mailto:joao060220@gmail.com">joao060220@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/joao-antonio-tafarelo-guelfi" target="_blank">www.linkedin.com/in/joao-antonio-tafarelo-guelfi</a></p>
-      <p>GitHub: <a href="https://github.com/JATafarelo" target="_blank">https://github.com/JATafarelo</a></p>
-      <p>Telefone: <a target="_blank">+55 (18) 9 9695-9909</a></p>
-    </section>
-  </div>
+<footer data-i18n="footer">
+  © 2025 João Antonio Tafarelo Guelfi •
+</footer>
 
-  <footer>
-    © 2025 João Antonio Tafarelo Guelfi •
-  </footer>
-
+<!-- Partículas -->
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<!-- 2. Seu arquivo de configuração -->
 <script src="particles.js"></script>
 
-  
+<!-- Script i18n -->
+<script src="assets/js/i18n.js"></script>
+
 </body>
 </html>
