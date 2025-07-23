@@ -1,7 +1,7 @@
 particlesJS('particles-js', {
   particles: {
     number: {
-      value: 50,
+      value: 150,                   // mais nós
       density: { enable: true, value_area: 1800 }
     },
     color: { value: ["#00ff00", "#55ff55", "#aaffaa"] },
@@ -25,11 +25,10 @@ particlesJS('particles-js', {
     },
     move: {
       enable: true,
-      speed: 1.2,
+      speed: 0.6,                  // movimento mais lento e suave
       random: true,
       straight: false,
       out_mode: "out"
-      // attract: { enable: true, rotateX: 600, rotateY: 1200 }
     }
   },
   interactivity: {
