@@ -1,0 +1,19 @@
+{
+  "nav.about": "About",
+  "nav.skills": "Skills",
+  "nav.projects": "Projects",
+  "nav.languages": "Languages",
+  "nav.contact": "Contact",
+  "hero.title": "Welcome to my portfolio",
+  "hero.subtitle": "Where others see data, I see opportunity.",
+  "about.title": "About Me",
+  "about.1": "I'm a data scientist with hands-on experience since 2021...",
+  "about.2": "I’ve worked on national and international projects...",
+  "about.3": "In my daily work, I use agile methodologies...",
+  "projects.title": "Projects",
+  "languages.title": "Languages",
+  "languages.pt": "Native",
+  "languages.en": "Advanced",
+  "contact.title": "Contact Me",
+  "footer": "© 2025 João Antonio Tafarelo Guelfi"
+}
