@@ -12,8 +12,10 @@
   "about.3": "In my daily work, I apply agile methodologies like Scrum and Kanban. I stand out for my analytical thinking, clear communication of insights, business vision, and collaboration with multidisciplinary teams — all essential to turning data into strategic decisions.",
   "projects.title": "Projects",
   "languages.title": "Languages",
-  "languages.pt": "Native",
-  "languages.en": "Advanced",
+  "languages.pt": "Portuguese",
+  "languages.en": "English",
+  "languages.native": "Native",
+  "languages.advanced": "Advanced",
   "contact.title": "Contact Me",
   "footer": "© 2025 João Antonio Tafarelo Guelfi",
 
