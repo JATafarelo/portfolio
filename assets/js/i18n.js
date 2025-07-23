@@ -8,7 +8,11 @@ async function loadLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       if (translations[key]) {
-        el.textContent = translations[key];
+        if (el.tagName === 'TITLE') {
+          document.title = translations[key];
+        } else {
+          el.textContent = translations[key];
+        }
       }
     });
   } catch (error) {
