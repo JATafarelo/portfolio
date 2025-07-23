@@ -89,6 +89,10 @@
       color: #8b949e;
     }
 
+.hero p {
+  font-weight: bold; /* ou 700 para valores numéricos */
+}
+
 /* ===== Skill Bars ===== */
 .skill {
   display: flex;
