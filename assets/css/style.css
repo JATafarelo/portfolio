@@ -183,3 +183,32 @@ footer {
   border: 0;
 }
 
+/* Diplomas Section Tabs */
+  .tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .tab {
+    padding: 0.5rem 1rem;
+    background: var(--card-bg);
+    color: var(--fg);
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: background 0.3s;
+  }
+  .tab:hover {
+    background: var(--accent-dark);
+  }
+  .tab.active {
+    background: var(--accent);
+    color: var(--bg);
+    font-weight: bold;
+  }
+  /* Lista de certificados */
+  #cert-list {
+    list-style: inside;
+    margin-top: 1rem;
+    line-height: 1.4;
+  }
