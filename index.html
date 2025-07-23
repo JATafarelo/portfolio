@@ -88,14 +88,20 @@
     <div class="skill"><span class="skill-name" data-i18n="skill.kanban">Kanban</span><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div><span class="skill-value">8/10</span></div>
   </section>
 
-  <section id="certifications" class="card">
-    <h3 data-i18n="certifications.title">Certificações</h3>
-    <ul>
-      <li>Badge em Data Science – Plataforma X</li>
-      <li>Certificado em Machine Learning – Curso Y</li>
-      <li>Diploma em Estatística – Universidade Z</li>
-    </ul>
-</section>
+  <!-- Seção de Diplomas com subseções dinâmicas e i18n -->
+  <section id="diplomas" class="card">
+    <h3 data-i18n="diplomas.title">Diplomas e Certificados</h3>
+  
+    <!-- Navegação de subseções -->
+    <div class="tabs">
+      <button class="tab active" data-section="curso" data-i18n="diplomas.tab_curso">Curso Superior</button>
+      <button class="tab" data-section="aws" data-i18n="diplomas.tab_aws">AWS</button>
+      <button class="tab" data-section="azure" data-i18n="diplomas.tab_azure">Azure</button>
+    </div>
+  
+    <!-- Container para exibir certificados -->
+    <ul id="cert-list"></ul>
+  </section>
 
   <section id="projects" class="card">
     <h3 data-i18n="projects.title">Projetos</h3>
