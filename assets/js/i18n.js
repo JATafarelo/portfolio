@@ -41,12 +41,21 @@ function initLanguage() {
   function renderCertificates(sectionKey) {
     const listContainer = document.getElementById('cert-list');
     listContainer.innerHTML = '';
-
-    // Busca array no objeto translations carregado
+  
+    // pega só os nomes de arquivo
     const items = translations[`diplomas.list_${sectionKey}`] || [];
-    items.forEach(text => {
+    items.forEach(filename => {
       const li = document.createElement('li');
-      li.textContent = text;
+      const img = document.createElement('img');
+  
+      // monta o caminho com a pasta igual ao sectionKey
+      img.src = `assets/certifications/${sectionKey}/${filename}`;
+      // alt simples: usa o texto traduzido se existir ou o nome limpo
+      const altKey = `diplomas.alt_${sectionKey}_${filename.replace(/\.[^.]+$/, '')}`;
+      img.alt = translations[altKey] ||
+        filename.replace(/[-_]/g, ' ').replace(/\.\w+$/, '');
+  
+      li.appendChild(img);
       listContainer.appendChild(li);
     });
   }
