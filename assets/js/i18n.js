@@ -4,17 +4,17 @@ async function loadLanguage(lang) {
     const response = await fetch(`assets/i18n/${lang}.json`);
     const translations = await response.json();
 
-    // Percorre todos os elementos com data-i18n e atualiza seu texto
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       if (translations[key]) {
-        if (el.tagName === 'TITLE') {
-          document.title = translations[key];
-        } else {
-          el.textContent = translations[key];
-        }
+        el.textContent = translations[key];
       }
     });
+
+    // Atualiza manualmente o título
+    if (translations.title) {
+      document.title = translations.title;
+    }
   } catch (error) {
     console.error('Erro ao carregar tradução:', error);
   }
