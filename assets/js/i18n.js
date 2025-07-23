@@ -1,27 +1,37 @@
+// Função para carregar os arquivos JSON e atualizar o texto da página
 async function loadLanguage(lang) {
   try {
-    const res = await fetch(`assets/i18n/${lang}.json`);
-    const translations = await res.json();
+    const response = await fetch(`locales/${lang}.json`);
+    const translations = await response.json();
 
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-      const key = el.getAttribute("data-i18n");
-      if (translations[key]) el.innerText = translations[key];
+    // Percorre todos os elementos com data-i18n e atualiza seu texto
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[key]) {
+        el.textContent = translations[key];
+      }
     });
-
-    localStorage.setItem("lang", lang);
-  } catch (e) {
-    console.error("Erro ao carregar idioma:", e);
+  } catch (error) {
+    console.error('Erro ao carregar tradução:', error);
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const lang = localStorage.getItem("lang") || "pt";
-  loadLanguage(lang);
+// Função para inicializar o idioma com base no localStorage ou default
+function initLanguage() {
+  const savedLang = localStorage.getItem('language') || 'pt';
+  const select = document.getElementById('lang-select');
 
-  document.querySelectorAll("[data-lang]").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const selectedLang = btn.dataset.lang;
+  if (select) {
+    select.value = savedLang;
+    select.addEventListener('change', (e) => {
+      const selectedLang = e.target.value;
+      localStorage.setItem('language', selectedLang);
       loadLanguage(selectedLang);
     });
-  });
-});
+  }
+
+  loadLanguage(savedLang);
+}
+
+// Executa a inicialização quando o DOM estiver carregado
+document.addEventListener('DOMContentLoaded', initLanguage);
