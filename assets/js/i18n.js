@@ -1,7 +1,7 @@
 // Função para carregar os arquivos JSON e atualizar o texto da página
 async function loadLanguage(lang) {
   try {
-    const response = await fetch(`locales/${lang}.json`);
+    const response = await fetch(`assets/i18n/${lang}.json`);
     const translations = await response.json();
 
     // Percorre todos os elementos com data-i18n e atualiza seu texto
