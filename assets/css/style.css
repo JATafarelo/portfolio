@@ -208,7 +208,24 @@ footer {
   }
   /* Lista de certificados */
   #cert-list {
-    list-style: inside;
-    margin-top: 1rem;
-    line-height: 1.4;
-  }
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#cert-list li {
+  flex: 0 0 calc(33.333% - 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cert-list img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px var(--shadow);
+}
