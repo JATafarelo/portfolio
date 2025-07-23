@@ -30,14 +30,14 @@
   "skill.bigdata": "Big Data",
   "skill.mlops": "MLOps",
   "skill.cicd": "CI/CD",
-  "skill.deploy": "Deploy de Modelos",
+  "skill.deploy": "Implementação de Modelos",
   "skill.eda": "Análise Exploratória de Dados",
   "skill.modeling": "Modelagem de Dados",
   "skill.ml": "Machine Learning",
   "skill.dl": "Deep Learning",
   "skill.llm": "LLM",
   "skill.powerbi": "Power BI",
-  "skill.prompt": "Prompt Engineering",
+  "skill.prompt": "Engenharia de Prompt",
   "skill.scrum": "SCRUM",
   "skill.kanban": "Kanban"
 }
