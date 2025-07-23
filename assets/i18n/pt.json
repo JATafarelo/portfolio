@@ -16,4 +16,26 @@
   "languages.en": "Avançado",
   "contact.title": "Fale Comigo",
   "footer": "© 2025 João Antonio Tafarelo Guelfi"
+
+  "skill.python": "Python",
+  "skill.pyspark": "PySpark",
+  "skill.sql": "SQL",
+  "skill.databricks": "Databricks",
+  "skill.azure": "Azure",
+  "skill.aws": "AWS",
+  "skill.git": "Git/GitHub",
+  "skill.etl": "ETL",
+  "skill.bigdata": "Big Data",
+  "skill.mlops": "MLOps",
+  "skill.cicd": "CI/CD",
+  "skill.deploy": "Deploy de Modelos",
+  "skill.eda": "Análise Exploratória de Dados",
+  "skill.modeling": "Modelagem de Dados",
+  "skill.ml": "Machine Learning",
+  "skill.dl": "Deep Learning",
+  "skill.llm": "LLM",
+  "skill.powerbi": "Power BI",
+  "skill.prompt": "Prompt Engineering",
+  "skill.scrum": "SCRUM",
+  "skill.kanban": "Kanban"
 }
