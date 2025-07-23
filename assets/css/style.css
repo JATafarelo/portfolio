@@ -148,3 +148,58 @@ footer {
   left: 0;
   pointer-events: none;
 }
+
+/* === Base (telas pequenas) === */
+header {
+  background: var(--card-bg);
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.5rem;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: var(--accent-dark);
+}
+
+/* === Desktop (>=768px) === */
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    text-align: left;
+  }
+
+  header h1 {
+    margin-bottom: 0;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 1.2rem;
+  }
+
+  nav ul li a {
+    padding: 0;
+  }
+}
+
