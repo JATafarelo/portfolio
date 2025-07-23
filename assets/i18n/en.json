@@ -16,4 +16,26 @@
   "languages.en": "Advanced",
   "contact.title": "Contact Me",
   "footer": "© 2025 João Antonio Tafarelo Guelfi"
+
+  "skill.python": "Python",
+  "skill.pyspark": "PySpark",
+  "skill.sql": "SQL",
+  "skill.databricks": "Databricks",
+  "skill.azure": "Azure",
+  "skill.aws": "AWS",
+  "skill.git": "Git/GitHub",
+  "skill.etl": "ETL",
+  "skill.bigdata": "Big Data",
+  "skill.mlops": "MLOps",
+  "skill.cicd": "CI/CD",
+  "skill.deploy": "Model Deployment",
+  "skill.eda": "Exploratory Data Analysis",
+  "skill.modeling": "Data Modeling",
+  "skill.ml": "Machine Learning",
+  "skill.dl": "Deep Learning",
+  "skill.llm": "LLM",
+  "skill.powerbi": "Power BI",
+  "skill.prompt": "Prompt Engineering",
+  "skill.scrum": "SCRUM",
+  "skill.kanban": "Kanban"
 }
