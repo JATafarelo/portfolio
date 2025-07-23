@@ -57,7 +57,7 @@ nav ul {
 .hero p {
   max-width: 600px;
   margin: 0 auto;
-  font-weight: 300;
+  font-weight: bold;  /* agora todos os parágrafos na hero ficam em negrito */
 }
 
 .container {
