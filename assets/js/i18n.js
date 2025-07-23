@@ -1,4 +1,36 @@
-// Função para inicializar o idioma com base no localStorage ou default
+// Variável global para armazenar traduções carregadas
+  let translations = {};
+
+  // Função para carregar os arquivos JSON e atualizar o texto da página
+  async function loadLanguage(lang) {
+    try {
+      const response = await fetch(`assets/i18n/${lang}.json`);
+      translations = await response.json();
+
+      // Atualiza todos os elementos com data-i18n
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[key]) {
+          el.textContent = translations[key];
+        }
+      });
+
+      // Atualiza manualmente o título
+      if (translations.title) {
+        document.title = translations.title;
+      }
+
+      // Re-renderiza certificados na aba ativa (para atualizar alt text se necessário)
+      const activeTab = document.querySelector('.tab.active');
+      if (activeTab) {
+        renderCertificates(activeTab.getAttribute('data-section'));
+      }
+    } catch (error) {
+      console.error('Erro ao carregar tradução:', error);
+    }
+  }
+
+  // Função para inicializar o idioma com base no localStorage ou default
   function initLanguage() {
     const savedLang = localStorage.getItem('language') || 'pt';
     const select = document.getElementById('lang-select');
