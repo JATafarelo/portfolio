@@ -37,5 +37,38 @@ function initLanguage() {
   loadLanguage(savedLang);
 }
 
+// Função para renderizar certificados da seção selecionada
+  function renderCertificates(sectionKey) {
+    const listContainer = document.getElementById('cert-list');
+    listContainer.innerHTML = '';
+
+    // Busca array no objeto translations carregado
+    const items = translations[`diplomas.list_${sectionKey}`] || [];
+    items.forEach(text => {
+      const li = document.createElement('li');
+      li.textContent = text;
+      listContainer.appendChild(li);
+    });
+  }
+
+  // Após inicializar idioma, dispara renderização das abas
+  document.addEventListener('DOMContentLoaded', () => {
+    // Inicializa idioma e traduções
+    initLanguage();
+
+    // Renderiza certificados da aba ativa
+    const activeKey = document.querySelector('.tab.active').getAttribute('data-section');
+    renderCertificates(activeKey);
+
+    // Adiciona eventos de clique nas abas
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        renderCertificates(tab.getAttribute('data-section'));
+      });
+    });
+  });
+
 // Executa a inicialização quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', initLanguage);
