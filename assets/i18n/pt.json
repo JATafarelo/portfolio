@@ -24,6 +24,7 @@
   "diplomas.tab_curso": "Curso Superior",
   "diplomas.tab_aws": "AWS",
   "diplomas.tab_azure": "Azure",
+   "diplomas.tab_azure": "Databricks",
   "diplomas.list_curso": [
     "computerscience.png",
     "mastery.png"
@@ -35,6 +36,9 @@
   "diplomas.list_azure": [
     "azure-fundamentals.png",
     "azure-data-scientist.png"
+  ],
+  "diplomas.list_databricks": [
+    "genai_fundamentals.png",
   ],
 
   "skill.python": "Python",
